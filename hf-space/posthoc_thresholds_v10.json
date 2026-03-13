@@ -1,0 +1,54 @@
+{
+  "temperature": 0.8699069619178772,
+  "val_ece_before": 0.052341002043540974,
+  "val_ece_after": 0.05046793157509862,
+  "per_class_thresholds": {
+    "benign dermal": {
+      "threshold_youden": 0.3861390948295593,
+      "threshold_clinical": 0.09257583320140839,
+      "sensitivity_youden": 0.7923076923076923,
+      "specificity_youden": 0.872093023255814
+    },
+    "benign epidermal": {
+      "threshold_youden": 0.2679089605808258,
+      "threshold_clinical": 0.10704188048839569,
+      "sensitivity_youden": 0.8252427184466019,
+      "specificity_youden": 0.8706199460916442
+    },
+    "benign melanocyte": {
+      "threshold_youden": 0.08795826137065887,
+      "threshold_clinical": 0.012006598524749279,
+      "sensitivity_youden": 0.8235294117647058,
+      "specificity_youden": 0.8954545454545455
+    },
+    "malignant dermal": {
+      "threshold_youden": 0.03608310595154762,
+      "threshold_clinical": 0.006019468419253826,
+      "sensitivity_youden": 0.9375,
+      "specificity_youden": 0.8930131004366813
+    },
+    "malignant epidermal": {
+      "threshold_youden": 0.2883097529411316,
+      "threshold_clinical": 0.05472199618816376,
+      "sensitivity_youden": 0.8770491803278688,
+      "specificity_youden": 0.8181818181818181
+    },
+    "malignant melanoma": {
+      "threshold_youden": 0.08448436111211777,
+      "threshold_clinical": 0.07116592675447464,
+      "sensitivity_youden": 0.9420289855072463,
+      "specificity_youden": 0.7975308641975308
+    }
+  },
+  "binary_youden": {
+    "threshold": 0.5606359243392944,
+    "val_recall": 0.7971014492753623,
+    "val_precision": 0.8291457286432161
+  },
+  "binary_clinical": {
+    "threshold": 0.17761960625648499,
+    "val_recall": 0.9516908212560387,
+    "val_precision": 0.6416938110749185
+  },
+  "note": "TS・閾値はすべてFitz valで最適化。DDIはテストセット扱い（最適化に使用せず）"
+}

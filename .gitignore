@@ -1,0 +1,19 @@
+# データセット
+data/
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Next.js
+web/.next/
+web/node_modules/
+
+# OS / 環境
+.DS_Store
+Miniconda3-*.sh
+.env*.local
+models/panderm_backbone.pth
+
+C:gpu_log.csv

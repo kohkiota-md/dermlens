@@ -1,0 +1,73 @@
+{
+  "model": "panderm_vit_large_lp_v8",
+  "roc_auc_macro": 0.9728448558685153,
+  "binary_roc_auc": 0.9672653958944282,
+  "class_names": [
+    "akiec",
+    "bcc",
+    "bkl",
+    "df",
+    "mel",
+    "nv",
+    "vasc"
+  ],
+  "youden_thresholds_7class": {
+    "akiec": {
+      "threshold": 0.03254355490207672,
+      "sensitivity": 0.9333333333333333,
+      "specificity": 0.9235074626865671,
+      "youden_j": 0.8568407960199005
+    },
+    "bcc": {
+      "threshold": 0.23780012130737305,
+      "sensitivity": 1.0,
+      "specificity": 0.9850187265917603,
+      "youden_j": 0.9850187265917603
+    },
+    "bkl": {
+      "threshold": 0.03653459995985031,
+      "sensitivity": 0.9545454545454546,
+      "specificity": 0.8678500986193294,
+      "youden_j": 0.822395553164784
+    },
+    "df": {
+      "threshold": 0.0013006514636799693,
+      "sensitivity": 1.0,
+      "specificity": 0.7568555758683729,
+      "youden_j": 0.7568555758683729
+    },
+    "mel": {
+      "threshold": 0.03904334828257561,
+      "sensitivity": 0.9130434782608695,
+      "specificity": 0.8522727272727273,
+      "youden_j": 0.7653162055335968
+    },
+    "nv": {
+      "threshold": 0.7561776041984558,
+      "sensitivity": 0.9591836734693877,
+      "specificity": 0.9363636363636364,
+      "youden_j": 0.8955473098330241
+    },
+    "vasc": {
+      "threshold": 0.05808042734861374,
+      "sensitivity": 1.0,
+      "specificity": 0.9926470588235294,
+      "youden_j": 0.9926470588235294
+    }
+  },
+  "clinical_threshold_mel": {
+    "threshold": 0.02223452925682068,
+    "sensitivity": 0.9565217391304348,
+    "specificity": 0.7992424242424243
+  },
+  "binary_youden": {
+    "threshold": 0.07953576743602753,
+    "sensitivity": 0.9636363636363636,
+    "specificity": 0.8608870967741935
+  },
+  "binary_clinical": {
+    "threshold": 0.07953576743602753,
+    "sensitivity": 0.9636363636363636,
+    "specificity": 0.8608870967741935
+  }
+}

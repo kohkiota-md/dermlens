@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+/* ============================================================
+   カスタムテーマ: 臨床医療系 — 信頼性・清潔感・専門性
+   ============================================================ */
+
+@theme {
+  --color-slate-925: #0a0f1a;
+  --color-clinical-50: #f0f5fa;
+  --color-clinical-100: #e0eaf4;
+  --color-clinical-200: #b8d0e8;
+  --color-clinical-600: #2563a0;
+  --color-clinical-700: #1e4f82;
+  --color-clinical-800: #163a61;
+  --font-sans: "Noto Sans JP", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* ============================================================
+   ベーススタイル
+   ============================================================ */
+
+body {
+  background-color: var(--color-clinical-50);
+  color: var(--color-slate-925);
+  font-feature-settings: "palt";
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ============================================================
+   ドラッグ&ドロップ領域のアニメーション
+   ============================================================ */
+
+.drop-zone {
+  transition: all 0.2s ease;
+}
+
+.drop-zone-active {
+  border-color: var(--color-clinical-600);
+  background-color: var(--color-clinical-100);
+  transform: scale(1.01);
+}
+
+/* ============================================================
+   確率バーのアニメーション
+   ============================================================ */
+
+@keyframes bar-grow {
+  from {
+    width: 0%;
+  }
+}
+
+.confidence-bar {
+  animation: bar-grow 0.6s ease-out forwards;
+}
+
+/* ============================================================
+   フェードインアニメーション
+   ============================================================ */
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.4s ease-out forwards;
+}
+
+/* ============================================================
+   パルスアニメーション（予測中）
+   ============================================================ */
+
+@keyframes gentle-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-gentle-pulse {
+  animation: gentle-pulse 1.5s ease-in-out infinite;
+}

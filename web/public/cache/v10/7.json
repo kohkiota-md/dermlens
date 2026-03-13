@@ -1,0 +1,21 @@
+{
+  "confidences": {
+    "benign_dermal": 0.01381677109748125,
+    "benign_epidermal": 0.01280721090734005,
+    "benign_melanocyte": 0.010234358720481396,
+    "malignant_dermal": 0.003329767379909754,
+    "malignant_epidermal": 0.8963661789894104,
+    "malignant_melanoma": 0.06344565004110336
+  },
+  "topPrediction": "malignant_epidermal",
+  "topConfidence": 0.8963661789894104,
+  "risk": {
+    "binaryRiskScore": 0.9631415964104235,
+    "riskLevel": "high",
+    "threshold": 0.17761960625648499,
+    "calibrated": true,
+    "temperature": 0.8699069619178772,
+    "ece": 0.05046793157509862
+  },
+  "gradcamImageUrl": "/cache/v10/gradcam-7.jpg"
+}

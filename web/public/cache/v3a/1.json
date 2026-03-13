@@ -1,0 +1,22 @@
+{
+  "confidences": {
+    "akiec": 0.00002779509304673411,
+    "bcc": 0.0000026714594696386484,
+    "bkl": 0.00012994125427212566,
+    "df": 0.000003199801085429499,
+    "mel": 0.9976015686988831,
+    "nv": 0.0022315899841487408,
+    "vasc": 0.000003254297098465031
+  },
+  "topPrediction": "mel",
+  "topConfidence": 0.9976015686988831,
+  "risk": {
+    "binaryRiskScore": 0.9976320352513994,
+    "riskLevel": "high",
+    "threshold": 0.21219900250434875,
+    "calibrated": true,
+    "temperature": 1.382468581199646,
+    "ece": 0.026610322438470946
+  },
+  "gradcamImageUrl": "/cache/v3a/gradcam-1.jpg"
+}

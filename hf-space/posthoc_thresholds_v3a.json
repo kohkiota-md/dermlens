@@ -1,0 +1,78 @@
+{
+  "model": "densenet_v3a",
+  "roc_auc_macro": 0.982116293046139,
+  "mel_roc_auc": 0.9409584980237155,
+  "binary_roc_auc": 0.9682551319648094,
+  "class_names": [
+    "akiec",
+    "bcc",
+    "bkl",
+    "df",
+    "mel",
+    "nv",
+    "vasc"
+  ],
+  "malignant_classes": [
+    "mel",
+    "bcc",
+    "akiec"
+  ],
+  "benign_classes": [
+    "nv",
+    "bkl",
+    "df",
+    "vasc"
+  ],
+  "youden_thresholds_7class": {
+    "akiec": {
+      "threshold": 0.016142020002007484,
+      "sensitivity": 0.9333333333333333,
+      "specificity": 0.9533582089552238
+    },
+    "bcc": {
+      "threshold": 0.02522382326424122,
+      "sensitivity": 1.0,
+      "specificity": 0.9625468164794008
+    },
+    "bkl": {
+      "threshold": 0.10656271129846573,
+      "sensitivity": 0.9318181818181818,
+      "specificity": 0.9230769230769231
+    },
+    "df": {
+      "threshold": 0.21880872547626495,
+      "sensitivity": 1.0,
+      "specificity": 0.9963436928702011
+    },
+    "mel": {
+      "threshold": 0.01939420960843563,
+      "sensitivity": 1.0,
+      "specificity": 0.7367424242424243
+    },
+    "nv": {
+      "threshold": 0.6629485487937927,
+      "sensitivity": 0.9342403628117913,
+      "specificity": 0.9727272727272728
+    },
+    "vasc": {
+      "threshold": 0.04826866090297699,
+      "sensitivity": 1.0,
+      "specificity": 0.9926470588235294
+    }
+  },
+  "clinical_threshold_mel": {
+    "threshold": 0.029246384277939796,
+    "sensitivity": 0.9565217391304348,
+    "specificity": 0.7708333333333334
+  },
+  "binary_youden": {
+    "threshold": 0.1439024806022644,
+    "sensitivity": 0.9636363636363636,
+    "specificity": 0.8649193548387097
+  },
+  "binary_clinical": {
+    "threshold": 0.1439024806022644,
+    "sensitivity": 0.9636363636363636,
+    "specificity": 0.8649193548387097
+  }
+}
